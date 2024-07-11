@@ -1,0 +1,22 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCIE = [
+  {
+    date: "Diciembre 2023",
+    title: "Analista de software",
+    company: "Arus S.A",
+    description:
+      "Responsable de analizar, diseñar, desarrollar y mantener sistemas de software según las necesidades del cliente o usuario final. Mantuve un enfoque proactivo en la mejora continua, identificando oportunidades para optimizar procesos y aumentar la eficiencia operativa del equipo.",
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
